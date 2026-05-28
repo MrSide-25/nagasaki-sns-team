@@ -54,7 +54,7 @@
   /* Intro section */
   .intro-section { padding: 24px 20px; border-bottom: 1px solid #eee; }
   .intro-headline { font-size: 18px; font-weight: 700; color: #222; margin-bottom: 16px; line-height: 1.5; }
-  .intro-body { font-size: 13px; color: #444; line-height: 2; }
+  .intro-body { font-size: 13px; color: #444; line-height: 2; word-break: auto-phrase; overflow-wrap: break-word; }
   .intro-body p { margin-bottom: 8px; }
   .intro-body .emphasis { font-weight: 700; color: #222; }
   .checklist { margin: 16px 0; padding: 16px; background: #f9f9f9; border-radius: 4px; border: 1px solid #eee; }
@@ -108,6 +108,14 @@
     .point-grid { grid-template-columns: 1fr; }
     .culture-grid { grid-template-columns: 1fr; }
     .sidebar { order: -1; }
+    .container { padding: 8px; }
+    .intro-headline { font-size: 14px; line-height: 1.7; word-break: auto-phrase; overflow-wrap: break-word; }
+    .intro-body { font-size: 12.5px; line-height: 1.9; word-break: auto-phrase; overflow-wrap: break-word; }
+    .intro-body p { margin-bottom: 10px; }
+    .section-tabs { overflow-x: auto; white-space: nowrap; }
+    .section-tabs a { padding: 10px 12px; font-size: 12px; }
+    .company-name { font-size: 18px; }
+    .info-table th { width: 90px; }
   }
 
   /* Member section */
@@ -198,7 +206,10 @@
 
         <!-- 紹介文 -->
         <div class="intro-section">
-          <div class="intro-headline">【君の発信が、誰かの大学生活を変える。】<br>長崎大学の"解像度"を上げる学生マーケティングチーム</div>
+          <div class="intro-headline">
+            <div style="text-align:center; font-size:16px; margin-bottom:8px;">【君の発信が、誰かの大学生活を変える。】</div>
+            <div style="text-align:center; font-size:15px; line-height:1.6;">長崎大学の"解像度"を上げる<br>学生マーケティングチーム</div>
+          </div>
           <div class="intro-body">
             <p class="emphasis">「圧倒的に成長したい」</p>
             <p>SNSチームに集まるのは、そんな想いを持つメンバーたち。</p>
